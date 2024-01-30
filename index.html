@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="fr">
+	<head>
+		<meta charset="UTF-8" />
+		<link rel="icon" type="image/svg+xml" href="/vite.svg" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>TP Liste de films - HTML et CSS</title>
+
+		<link rel="stylesheet" href="./style/main.css" />
+	</head>
+	<body>
+		<header class="header--container">
+			<div class="header--wrapper">
+				<a href="/">
+					<h1>Le coin des cinéphiles</h1>
+				</a>
+
+				<div class="header--user--container">
+					<h2 class="hidden">Nom de l'utilisateur</h2>
+					<button class="btn header--user--btn">Connexion</button>
+					<button class="btn header--user--btn hidden">Déconnexion</button>
+				</div>
+			</div>
+
+			<div class="modale--login--container hidden">
+				<div class="modale--login--wrapper">
+					<h3 class="modale--login--title">Connexion</h3>
+					<div class="modale--login--form">
+						<div class="form--section">
+							<label for="email">E-mail : </label>
+							<input type="text" id="email" />
+						</div>
+						<div class="form--section">
+							<label for="password">Mot de passe : </label>
+							<input type="text" id="password" />
+						</div>
+						<button class="btn modale--login--btn">Valider</button>
+					</div>
+				</div>
+			</div>
+		</header>
+
+		<main>
+			<section class="addFilm--user--container hidden">
+				<div class="addFilm--user--wrapper">
+					<a href="/pages/ajouter-un-film.html" class="addFilm--user--btn"
+						>Ajouter un film</a
+					>
+				</div>
+			</section>
+
+			<section class="displayFilms--container">
+				<div class="displayFilms--wrapper">
+					<template id="cardFilmTemplate">
+						<a href="#" class="cardFilm--container">
+							<div class="cardFilm--wrapper">
+								<img src="#" alt="#" class="cardFilm--cover" />
+
+								<div class="cardFilm--content--wrapper">
+									<h4 class="cardFilm--title">Titre du film</h4>
+									<div class="cardFilm--rating--wrapper">
+										<img
+											src="/public/images/etoile.png"
+											alt="icone d'une étoile" />
+										<img
+											src="/public/images/etoile.png"
+											alt="icone d'une étoile" />
+										<img
+											src="/public/images/etoile.png"
+											alt="icone d'une étoile" />
+										<img
+											src="/public/images/etoile.png"
+											alt="icone d'une étoile" />
+										<img
+											src="/public/images/etoile.png"
+											alt="icone d'une étoile" />
+									</div>
+								</div>
+							</div>
+						</a>
+					</template>
+
+					<!-- EXEMPLE -->
+					<a href="/pages/details_1.html" class="cardFilm--container">
+						<div class="cardFilm--wrapper">
+							<img
+								src="/public/images/dune.webp"
+								alt="#"
+								class="cardFilm--cover" />
+
+							<div class="cardFilm--content--wrapper">
+								<h4 class="cardFilm--title">Dune (2021)</h4>
+								<div class="cardFilm--rating--wrapper">
+									<img src="/public/images/star.png" alt="icone d'une étoile" />
+									<img src="/public/images/star.png" alt="icone d'une étoile" />
+									<img src="/public/images/star.png" alt="icone d'une étoile" />
+									<img
+										src="/public/images/etoile.png"
+										alt="icone d'une étoile" />
+									<img
+										src="/public/images/etoile.png"
+										alt="icone d'une étoile" />
+								</div>
+							</div>
+						</div>
+					</a>
+				</div>
+			</section>
+		</main>
+	</body>
+</html>

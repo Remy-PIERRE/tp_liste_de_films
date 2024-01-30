@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="fr">
+	<head>
+		<meta charset="UTF-8" />
+		<link rel="icon" type="image/svg+xml" href="/vite.svg" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>TP Liste de films - HTML et CSS</title>
+
+		<link rel="stylesheet" href="../style/main.css" />
+	</head>
+	<body>
+		<header class="header--container">
+			<div class="header--wrapper">
+				<a href="/">
+					<h1>Le coin des cinéphiles</h1>
+				</a>
+
+				<div class="header--user--container">
+					<h2>Nom de l'utilisateur</h2>
+					<button class="btn header--user--btn">Connexion</button>
+					<button class="btn header--user--btn hidden">Déconnexion</button>
+				</div>
+			</div>
+
+			<div class="modale--login--container hidden">
+				<div class="modale--login--wrapper">
+					<h3 class="modale--login--title">Connexion</h3>
+					<div class="modale--login--form">
+						<div class="form--section">
+							<label for="email">E-mail : </label>
+							<input type="text" id="email" />
+						</div>
+						<div class="form--section">
+							<label for="password">Mot de passe : </label>
+							<input type="text" id="password" />
+						</div>
+						<button class="btn modale--login--btn">Valider</button>
+					</div>
+				</div>
+			</div>
+		</header>
+
+		<main>
+			<section class="resumeFilm--container">
+				<div class="resumeFilm--wrapper">
+					<div class="resumeFilm--image--wrapper">
+						<img src="/public/images/dune.webp" alt="#" />
+					</div>
+					<div class="resumeFilm--content--wrapper">
+						<h2 class="resumeFilm--content--title">Dune (2021)</h2>
+						<p class="resumeFilm--content--description">
+							Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis non
+							quam facere praesentium natus, illo mollitia amet possimus
+							consequatur quibusdam doloribus temporibus tempora ab sed
+							doloremque. Consectetur, voluptatum voluptates magnam temporibus
+							adipisci non corrupti dolor harum in soluta necessitatibus nemo
+							perspiciatis aliquid esse corporis, commodi aperiam unde nisi eos
+							fugiat?
+						</p>
+
+						<div class="resumeFilm--average--wrapper">
+							<p>Note moyenne :</p>
+							<img src="/public/images/etoile.png" alt="" />
+							<img src="/public/images/etoile.png" alt="" />
+							<img src="/public/images/etoile.png" alt="" />
+							<img src="/public/images/etoile.png" alt="" />
+							<img src="/public/images/etoile.png" alt="" />
+						</div>
+						<div class="resumeFilm--rating--wrapper hidden">
+							<p>Votre note :</p>
+							<img src="/public/images/etoile.png" alt="" />
+							<img src="/public/images/etoile.png" alt="" />
+							<img src="/public/images/etoile.png" alt="" />
+							<img src="/public/images/etoile.png" alt="" />
+							<img src="/public/images/etoile.png" alt="" />
+						</div>
+
+						<div class="resumefilm--user--wrapper hidden">
+							<button class="btn resumeFilm--btn">&Eacute;diter</button>
+							<button class="btn resumeFilm--btn">Supprimer</button>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+	</body>
+</html>

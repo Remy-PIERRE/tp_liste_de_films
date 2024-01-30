@@ -1,0 +1,356 @@
+:root {
+	font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+	line-height: 1.5;
+	font-size: 16px;
+	font-weight: 400;
+
+	color-scheme: light dark;
+	color: rgba(255, 255, 255, 0.87);
+	background-color: #242424;
+
+	font-synthesis: none;
+	text-rendering: optimizeLegibility;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	text-decoration: none;
+	box-sizing: border-box;
+}
+
+body {
+	width: 100vw;
+	max-width: 100%;
+	min-height: 100vh;
+}
+
+/* GLOBALS */
+.hidden {
+	display: none !important;
+}
+
+/* TEXT */
+h1 {
+	font-size: 1.6rem;
+	font-weight: bold;
+	color: #fff;
+}
+
+h2 {
+	font-size: 1.2rem;
+	font-weight: bold;
+}
+
+h3 {
+	font-size: 1.2rem;
+	font-weight: bold;
+}
+
+h4 {
+	font-size: 1.4rem;
+	font-weight: bold;
+}
+
+/* BUTTONS */
+.btn {
+	height: 28px;
+	width: 88px;
+	border: 2px outset #333;
+	border-radius: 4px;
+	background: #333;
+	font-size: 0.8rem;
+	cursor: pointer;
+}
+
+.btn--link {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: #fff;
+}
+
+/* FORMS */
+.form--section {
+	display: flex;
+	flex-direction: column;
+	gap: 4px;
+	margin-bottom: 12px;
+}
+
+.form--section label {
+	font-size: 1rem;
+	color: #666;
+}
+
+.form--section input {
+	height: 32px;
+	padding: 0 8px;
+	background: #e9e9e9;
+	border: 2px outset #333;
+	outline: none;
+	color: #333;
+}
+
+.form--section textarea {
+	height: 100px;
+	padding: 8px 8px;
+	background: #e9e9e9;
+	border: 2px outset #333;
+	outline: none;
+	color: #333;
+}
+
+.form--submit {
+	display: flex;
+	align-items: center;
+	gap: 40px;
+}
+
+/* HEADER */
+.header--container {
+	background: #083344;
+	box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.5);
+}
+
+.header--wrapper {
+	padding: 20px 40px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.header--user--container {
+	display: flex;
+	align-items: center;
+	gap: 12px;
+}
+
+/* MODALE LOGIN */
+.modale--login--container {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100vw;
+	height: 100vh;
+	background: rgba(0, 0, 0, 0.7);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.modale--login--wrapper {
+	width: clamp(250px, 70%, 300px);
+	padding: 20px 20px 32px;
+	background: #fff;
+	border: 2px outset #e1e1e1;
+	border-radius: 4px;
+	color: #333;
+}
+
+.modale--login--title {
+	margin-bottom: 20px;
+}
+
+.modale--login--form {
+	width: 100%;
+}
+
+.modale--login--btn {
+	margin-top: 12px;
+	width: fit-content;
+	padding: 0 16px;
+}
+
+/* SECTION ADDFILM */
+.addFilm--user--wrapper {
+	padding: 40px 40px 0;
+	display: flex;
+	justify-content: center;
+}
+
+.addFilm--user--btn {
+	height: 28px;
+	padding: 0 12px;
+	border: 2px outset #333;
+	border-radius: 4px;
+	background: #333;
+	font-size: 0.8rem;
+	color: #fff;
+	cursor: pointer;
+	display: flex;
+	align-items: center;
+}
+
+/* SECTION DISPLAY FILMS */
+.displayFilms--wrapper {
+	padding: 40px 40px;
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	justify-items: center;
+	gap: 40px;
+}
+
+/* CARD FILM */
+.cardFilm--container {
+	width: clamp(200px, 100%, 300px);
+	overflow: hidden;
+	background: #fff;
+	color: #333;
+	border: 2px outset #333;
+	border-radius: 4px;
+	box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.5);
+}
+
+.cardFilm--wrapper {
+	width: 100%;
+	padding-bottom: 16px;
+	height: 420px;
+	cursor: pointer;
+}
+
+.cardFilm--cover {
+	width: 100%;
+	height: 85%;
+	object-fit: cover;
+}
+
+.cardFilm--title {
+	text-align: center;
+	margin-bottom: 4px;
+}
+
+.cardFilm--rating--wrapper {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 2px;
+}
+
+.cardFilm--rating--wrapper > img {
+	width: 20px;
+}
+
+/* RESUME FILM */
+.resumeFilm--wrapper {
+	padding: 40px 40px;
+	display: flex;
+	justify-content: center;
+	gap: 40px;
+}
+
+.resumeFilm--image--wrapper {
+	width: 30%;
+	border: 2px outset #333;
+	overflow: hidden;
+}
+
+.resumeFilm--image--wrapper img {
+	width: 100%;
+	height: auto;
+	object-fit: cover;
+}
+
+.resumeFilm--content--wrapper {
+	width: 40%;
+}
+
+.resumeFilm--content--title {
+	font-size: 2.2rem;
+	margin-bottom: 40px;
+}
+
+.resumeFilm--content--description {
+	font-size: 1.2rem;
+	text-align: justify;
+	margin-bottom: 60px;
+}
+
+.resumeFilm--average--wrapper,
+.resumeFilm--rating--wrapper {
+	display: flex;
+	align-items: center;
+	gap: 12px;
+	margin-bottom: 40px;
+}
+
+.resumeFilm--average--wrapper p,
+.resumeFilm--rating--wrapper p {
+	font-size: 1.2rem;
+	text-decoration: underline;
+	width: 175px;
+}
+
+.resumeFilm--average--wrapper img,
+.resumeFilm--rating--wrapper img {
+	width: 50px;
+}
+
+.resumefilm--user--wrapper {
+	display: flex;
+	align-items: center;
+	gap: 40px;
+	margin-top: 80px;
+}
+
+.resumeFilm--btn {
+	height: 40px;
+	width: 125px;
+	font-size: 1rem;
+}
+
+/* ADD FILM */
+.addFilm--wrapper {
+	padding: 40px 40px;
+}
+
+.addFilm--title {
+	font-size: 2.2rem;
+	margin-bottom: 40px;
+	text-align: center;
+}
+
+.addFilm--form {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	gap: 40px;
+}
+
+.addFilm--form--file {
+	width: 30%;
+	border: 2px outset #333;
+	overflow: hidden;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.addFilm--form--content {
+	width: 40%;
+}
+
+.addFilm--form--content label {
+	color: #fff;
+}
+
+.addFilm--form--rating {
+	flex-direction: row;
+	align-items: center;
+	gap: 40px;
+	margin: 40px 0;
+}
+
+.addFilm--rating--wrapper {
+	display: flex;
+	align-items: center;
+	gap: 4px;
+}
+
+.addFilm--rating--wrapper img {
+	width: 40px;
+	cursor: pointer;
+}

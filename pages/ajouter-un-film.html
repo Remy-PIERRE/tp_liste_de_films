@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="fr">
+	<head>
+		<meta charset="UTF-8" />
+		<link rel="icon" type="image/svg+xml" href="/vite.svg" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>TP Liste de films - HTML et CSS</title>
+
+		<link rel="stylesheet" href="../style/main.css" />
+	</head>
+	<body>
+		<header class="header--container">
+			<div class="header--wrapper">
+				<a href="/">
+					<h1>Le coin des cinéphiles</h1>
+				</a>
+
+				<div class="header--user--container">
+					<h2>Nom de l'utilisateur</h2>
+					<button class="btn header--user--btn">Connexion</button>
+					<button class="btn header--user--btn hidden">Déconnexion</button>
+				</div>
+			</div>
+
+			<div class="modale--login--container hidden">
+				<div class="modale--login--wrapper">
+					<h3 class="modale--login--title">Connexion</h3>
+					<div class="modale--login--form">
+						<div class="form--section">
+							<label for="email">E-mail : </label>
+							<input type="text" id="email" />
+						</div>
+						<div class="form--section">
+							<label for="password">Mot de passe : </label>
+							<input type="text" id="password" />
+						</div>
+						<button class="btn modale--login--btn">Valider</button>
+					</div>
+				</div>
+			</div>
+		</header>
+
+		<main>
+			<div class="addFilm--container">
+				<div class="addFilm--wrapper">
+					<h2 class="addFilm--title">Ajouter un nouveau film à ma liste</h2>
+
+					<form action="#" class="addFilm--form">
+						<div class="addFilm--form--file">
+							<div class="addFilm--section--file">
+								<label for="image">Image : </label>
+								<input type="file" id="image" accept="image/*" />
+							</div>
+						</div>
+
+						<div class="addFilm--form--content">
+							<div class="form--section">
+								<label for="title">Titre : </label>
+								<input type="text" id="title" />
+							</div>
+
+							<div class="form--section">
+								<label for="description">Description : </label>
+								<textarea id="description"></textarea>
+							</div>
+
+							<div class="form--section addFilm--form--rating">
+								<p>Note :</p>
+								<div class="addFilm--rating--wrapper">
+									<img
+										src="/public/images/etoile.png"
+										alt="icone d'une étoile" />
+									<img
+										src="/public/images/etoile.png"
+										alt="icone d'une étoile" />
+									<img
+										src="/public/images/etoile.png"
+										alt="icone d'une étoile" />
+									<img
+										src="/public/images/etoile.png"
+										alt="icone d'une étoile" />
+									<img
+										src="/public/images/etoile.png"
+										alt="icone d'une étoile" />
+								</div>
+							</div>
+
+							<div class="form--submit">
+								<button class="btn">Valider</button>
+								<a href="/" class="btn btn--link">Retour</a>
+							</div>
+						</div>
+					</form>
+				</div>
+			</div>
+		</main>
+	</body>
+</html>
